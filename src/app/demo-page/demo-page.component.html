@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>SCTE35-JS Demo</mat-card-title>
+  <mat-card-content fxLayout="column" fxLayoutAlign="center stretch">
+    <div fxLayout="column" fxLayoutAlign="center stretch">
+      <mat-form-field>
+        <input matInput placeholder="Payload" [value]="payload">
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <button mat-button mat-raised-button color="primary" (click)="parsePayload()">Parse</button>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center center" *ngIf="parsedObject !== undefined">
+      <ngx-json-viewer [json]="parsedObject"></ngx-json-viewer>
+    </div>
+  </mat-card-content>
+</mat-card>
