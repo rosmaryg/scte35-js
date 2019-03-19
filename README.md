@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+## Deploying changes to gh-pages
+
+Install the `angular-cli-ghpages` package. 
+
+`npm install -g angular-cli-ghpages` 
+
+Run the following commands:
+
+`ng build --prod --base-href "https://<user-name>.github.io/scte35-js/"`
+
+`ngh --message="<commit-message>"`
+
+Check out your newly deployed changes at `https://<user-name>.github.io/scte35-js/`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
